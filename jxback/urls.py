@@ -22,5 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url('index', views.index),
     url('input', views.input),
+    url('setuser', views.setuser),
+    url('jfpm', views.jfpm),
     url('list', views.list)
 ]

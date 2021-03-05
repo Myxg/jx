@@ -8,6 +8,7 @@ class train_user(models.Model):
     nickname = models.CharField(db_column='nickname', max_length=32, blank=True, null=True)  # Field name made lowercase.
     name = models.CharField(db_column='name', max_length=32, blank=True, null=True)  # Field name made lowercase.
     power = models.CharField(db_column='power', max_length=32, blank=True, null=True)  # Field name made lowercase.
+    zzjg = models.CharField(db_column='zzjg', max_length=64, blank=True, null=True)  # Field name made lowercase.
     jifen = models.IntegerField(db_column='jifen', blank=True, null=True)  # Field name made lowercase.
 
 
@@ -27,6 +28,7 @@ class match_results(models.Model):
     meijubifen = models.CharField(db_column='meijubifen', max_length=128, blank=True, null=True)  # Field name made lowercase.
     shengli1 = models.CharField(db_column='shengli1', max_length=32, blank=True, null=True)  # Field name made lowercase.
     shengli2 = models.CharField(db_column='shengli2', max_length=32, blank=True, null=True)  # Field name made lowercase.
+    project = models.CharField(db_column='project', max_length=64, blank=True, null=True)  # Field name made lowercase.
 
 
     class Meta:
